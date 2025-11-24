@@ -1,21 +1,7 @@
-# LF Model training pipeline.
-In this folder you can find a jupiter notebook with the main functions and pipelines for training the components of the Ladle Furnace (LF) Model.
-The ladle furnace model is composed of two neural networks for predicting:
-- the final steel chemical composition
-- the final steel temperature
+# Information about the contents
+This repository contains a set of open source resources, containing some of the results of the Alchimia project:
+- a set of models for forecasting the quality of the brake disco production, in terms of occurrence of defects (micro-shrinks and cementite) and natural frequency. The contents are available in the folder [DefectDetectionModels] 
+- a training pipeline implemented in a jupyter notebook, containing functions and procedures to train a set of neural networks from cleaned data. The contents are available in the folder [LadleFurnaceTrainingPipeline]
+- a set of models for forecasting the amount of steriles and contaminants in the scraps. The contents are available in the folder [ScrapProcessingModels]
 
-These two models exploit simple feed forward neural networks, composed of two dense layers connected in series and a final linear layer.
-
-The inputs of the models are the following:
-- ScrapWeight,
-- StartTemperature
-- Argon
-- Energy
-- Starting chemical composition: LF_CA_ELEMENT_S
-- Chemical additions (in terms of the main elements added):
-    - Ca, F, Si, C, S, O, N, B, Al, Fe, P, Mg, Zn, Cu, V, Mn, Cr, Ti
-	
-The possible targets are:
-- Final chemical composition: LF_CA_ELEMENT_F
-- Final temperature
 
